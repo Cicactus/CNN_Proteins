@@ -368,12 +368,12 @@ if __name__ == "__main__":
 
     os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:512"
 
-    db_folder_name='alldb'
+    db_folder_name='learn_Q16'
 
     # Load data
     try:
-        X = np.load(f"train_Q16X.npy").astype('float32')
-        y = np.load(f"train_Q16Y.npy").astype('float32')
+        X = np.load(f"./{db_folder_name}/train_Q16X.npy").astype('float32')
+        y = np.load(f"./{db_folder_name}/train_Q16Y.npy").astype('float32')
         CB513X = np.load(f"./{db_folder_name}/CB513X.npy").astype('float32')
         CB513Y = np.load(f"./{db_folder_name}/CB513Y.npy").astype('float32')
         X_test = np.load(f"./{db_folder_name}/test_Q16X.npy").astype('float32')

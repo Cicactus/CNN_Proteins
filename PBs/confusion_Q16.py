@@ -64,7 +64,7 @@ parser.add_argument("--model_path", type=str,
                     default='./Q16_BEST_MODEL_7_5_3_2_1_512_tanh_leakyrelu_78.52_FOR_CPU', # Updated default for new format
                     help="Path to the trained model state_dict file.")
 parser.add_argument("--data_path", type=str,
-                    default='./alldb/CB513X.npy',
+                    default='./learn_Q16/CB513X.npy',
                     help="Path to the input data (X.npy) for inference.")
 # Removed --conv_activation and --fc_activation args, as they will be parsed from filename
 args = parser.parse_args()

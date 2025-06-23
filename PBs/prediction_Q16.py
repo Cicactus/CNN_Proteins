@@ -8,7 +8,7 @@ from pathlib import Path # Import Path for file system operations
 import re
 import sys # Added for sys.exit
 
-db_folder_name='alldb'
+db_folder_name='learn_Q16'
 
 # --- Function to find and load model parameters from filename ---
 def find_and_load_q16_index_params(model_file_path, model_prefix="Q16"):
@@ -115,7 +115,7 @@ def main():
                          default='./Q16_BEST_MODEL_7_5_3_2_1_512_tanh_leakyrelu_78.52_FOR_CPU',
                          help="Path to the trained model state_dict file.")
     parser.add_argument("--dataset_paths", nargs='+',
-                         default=['./train_Q16X.npy',
+                         default=[f'./{db_folder_name}/train_Q16X.npy',
                                   f'./{db_folder_name}/test_Q16X.npy', # Use f-string for db_folder_name
                                   f'./{db_folder_name}/validation_Q16X.npy', # Use f-string
                                   f'./{db_folder_name}/CB513X.npy'], # CB513X is likely in alldb folder as well
