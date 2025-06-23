@@ -16,7 +16,7 @@ from pathlib import Path # Import Path for easier path manipulation
 
 parser = argparse.ArgumentParser(description="argparse")
 parser.add_argument("--model_path", type=str, default='Q8_BEST_MODEL_7_5_3_2_1_512_tanh_leakyrelu_68.48_FOR_CPU')
-parser.add_argument("--data_path", type=str, default='./alldb/test_for_dsspX.npy')
+parser.add_argument("--data_path", type=str, default='./learn_Q8/test_for_dsspX.npy')
 args = parser.parse_args()
 
 device = torch.device("cpu")

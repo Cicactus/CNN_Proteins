@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 # Global constant for the database folder name
-db_folder_name = 'alldb'
+db_folder_name = 'learn_Q8'
 
 # Model definition
 class Model(nn.Module):
